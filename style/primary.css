@@ -1,0 +1,25 @@
+body {
+	font-family: arial, serif;
+	font-size: 12px;
+}
+
+#gameoflife {
+	white-space: nowrap;
+	overflow: auto;
+}
+
+.cell {
+	float: left;
+}
+
+.break {
+	clear: both;
+}
+
+.console {
+	margin-bottom: 1em;
+}
+
+#gameoflife #counter {
+	text-align: right;
+}

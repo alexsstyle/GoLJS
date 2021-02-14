@@ -1,0 +1,35 @@
+<html version="-//W3C//DTD HTML 4.01 Transitional//EN">
+	<head>
+	
+		<title>GameOfLife</title>
+		
+		<link rel="stylesheet" type="text/css" href="style/primary.css" />
+		
+		<script type="text/javascript" src="script/gol.js"></script>
+		
+	</head>
+	<body>
+	
+		<div id="controlling" class="console">Field: <select id="size"></select>&nbsp;
+											  Steps (per draw): <select id="generations">
+											 						<option>1</option>
+											 						<option>2</option>
+											 						<option>3</option>
+											 						<option>4</option>
+											 						<option>5</option>
+											 						<option>6</option>
+											 						<option>7</option>
+											 						<option>8</option>
+											 						<option>9</option>
+															   </select>&nbsp;
+											  <input type="button" value="clear"    id="clear"      onclick="cls();" />&nbsp;
+											  <input type="button" value="next"     id="next"       onclick="tLiveCounter.value = cellBox.nextGeneration();" />&nbsp;
+											  <input type="button" value="simulate" id="simulation" onclick="controllSimulation();" />&nbsp;
+											  <input type="text"   value=""         id="counter" readonly /> Generations&nbsp;
+											  <input type="button" value="save"     id="save"      onclick="cellBox.save();" />
+											  <br /><hr />
+		</div>
+		<div id="gameoflife"></div>
+	
+	</body>
+</html>
